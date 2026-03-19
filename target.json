@@ -1,0 +1,11 @@
+{
+    "include": [
+        {
+            "keyboard": "likematrix2030",
+            "keymap": "vial",
+            "target": "uf2",
+            "flags": "EXTRAFLAGS=\"\"",
+            "name": "likematrix2030_vial"
+        }
+    ]
+}
