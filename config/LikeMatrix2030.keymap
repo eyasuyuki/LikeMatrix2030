@@ -2,6 +2,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        zerozero: zerozero {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &kp N0>;
+            label = "ZEROZERO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -13,7 +22,7 @@
 
         lower_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kt INS  &kp K_POWER  &kp K_SLEEP  &trans  &kp PRINTSCREEN  &kp SYSREQ  &kp C_PAUSE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp SLASH  &kp ASTERISK  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp HOME  &kp UP  &kp END  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_MUTE  &kp PAGE_UP  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &kp NUMBER_0  &trans  &kp PERIOD  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kt INS  &kp K_POWER  &kp K_SLEEP  &trans  &kp PRINTSCREEN  &kp SYSREQ  &kp C_PAUSE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp SLASH  &kp ASTERISK  &kp MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp HOME  &kp UP  &kp END  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_MUTE  &kp PAGE_UP  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER  &trans  &trans  &trans  &trans  &kp PAGE_DOWN  &kp NUMBER_0  &zerozero  &kp PERIOD  &trans
             >;
         };
     };
