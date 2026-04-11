@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                    KC_8,            KC_9,            KC_0, KC_LEFT_BRACKET,
         KC_RIGHT_BRACKET,   KC_CALCULATOR,          KC_TAB,        KC_QUOTE,
                KC_COMMA,          KC_DOT,            KC_P,            KC_Y,
-                   KC_F,            KC_G,            KC_C,            KC_N,
+                   KC_F,            KC_G,            KC_C,            KC_R,
                    KC_L,        KC_SLASH,        KC_EQUAL,         KC_MAIL,
           KC_LEFT_SHIFT,            KC_A,            KC_O,            KC_E,
                    KC_U,            KC_I,        KC_ENTER,            KC_D,
